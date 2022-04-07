@@ -1,0 +1,110 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - News
+  - Music
+  - Notes
+  - Reminders
+  - Maps
+  - Mail
+  - Messages
+  - TV
+  - Podcasts
+  - "App Store"
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: true
+# sudoers_custom_config: ''
+# Example:
+sudoers_custom_config: |
+  # Allow users in admin group to use sudo with no password.
+  %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/LukeCallaghan/dotfiles-mac.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Documents/Code/
+dotfiles_files:
+  - .zshrc
+  - .osx
+  - .gitconfig
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autopep8
+  - bandit
+  - black
+  - composer
+  - git
+  - gpg
+  - mcrypt
+  - php
+  - php-cs-fixer
+  - ssh-copy-id
+  - openssl
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+# One change
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - google-chrome
+  - vagrant
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 1462114288, name: "Grammarly for Safari" }
+  - { id: 415166115, name: "Typist" }
+  - { id: 682658836, name: "GarageBand" }
+  - { id: 1402042596, name: "AdBlock" }
+  - { id: 926036361, name: "LastPass Password Manager" }
+
+mas_uninstalled_apps:
+  - { id: 408981434, name: "iMovie" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409203825, name: "Numbers" }
+
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages:
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+  - name: thefuck
+    state: latest
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
