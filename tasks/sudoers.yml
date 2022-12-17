@@ -11,11 +11,12 @@
     sed_path: "{{ sed_which_result.stdout }}"
   when: sed_path is undefined
 
-# Sudoers configuration.
-- name: Copy sudoers configuration into place.
-  copy:
-    content: "{{ sudoers_custom_config }}"
-    dest: /private/etc/sudoers.d/custom
-    mode: 0440
-    validate: 'visudo -cf %s'
+- name: Set content of sudo file as fact
+  set_fact:
+    sudo_conf: "{{ lookup('file', '/etc/pam.d/sudo') }}"
+  ignore_errors: true
+
+- name: Set sudo via Touch ID if not setup
   become: true
+  command: sed -i '' 's/auth       sufficient     pam_smartcard.so/auth       sufficient     pam_smartcard.so\nauth       sufficient     pam_tid.so/g' /etc/pam.d/sudo
+  when: "'auth       sufficient     pam_tid.so' not in sudo_conf"

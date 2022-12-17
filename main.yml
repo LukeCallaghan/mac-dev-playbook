@@ -24,6 +24,9 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: gantsign.visual-studio-code-extensions
+      users:
+          - username: lukecallaghan
 
   tasks:
     - import_tasks: tasks/sudoers.yml
@@ -40,10 +43,6 @@
 
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
-
-    - import_tasks: tasks/sublime-text.yml
-      when: configure_sublime
-      tags: ['sublime-text']
 
     - block:
         - name: Run configured post-provision ansible task files.
