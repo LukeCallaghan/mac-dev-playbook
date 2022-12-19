@@ -29,8 +29,9 @@ This playbook installs and configures most of the software I use on my Mac. I st
 It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
 
   1. Installation of OhMyZSH - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-  2. Installation of OneDrive
-  3. Sync of SharePoint Online
+  2. Installation of ZSH auto-completion - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+  3. Installation of OneDrive
+  4. Sync of SharePoint Online
 
 ## Author
 
