@@ -1,7 +1,7 @@
 ---
 # Custom Terminal theme.
-#- name: Install Oh My Zsh
+# - name: Install Oh My Zsh
 #  command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 
-#- name: Install Starship
+# - name: Install Starship
 #  command: 'curl -sS https://starship.rs/install.sh | sh'
