@@ -51,6 +51,7 @@ dotfiles_files:
   - .starship.toml
   - .starship_uptime.sh
   - .php_cs.config
+  - .aliasesrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
