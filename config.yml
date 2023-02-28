@@ -22,6 +22,7 @@ dockitems_remove:
   - Podcasts
   - News
   - "App Store"
+  - Freeform
 dockitems_persist:
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
@@ -119,7 +120,7 @@ homebrew_cask_apps:
   - font-fira-code-nerd-font
   - google-chrome
   - grammarly-desktop
-  - lastpass
+  - bitwarden
   - microsoft-remote-desktop
   - powershell
   - ringcentral
