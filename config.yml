@@ -59,6 +59,7 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - doxygen
+  - ffmpeg
   - gettext
   - gifsicle
   - git
