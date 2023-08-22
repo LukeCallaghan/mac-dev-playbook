@@ -83,11 +83,8 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
   - python@3.11
-  - bandit
-  - black
   - libpq
   - composer
-  - unbound
   - gnupg
   - iperf3
   - isort
@@ -97,7 +94,6 @@ homebrew_installed_packages:
   - python-tk@3.11
   - thefuck
   - starship
-  - cocoapods
 
 homebrew_taps:
   - homebrew/core
@@ -109,10 +105,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
-  - sequel-ace
   - transmit
-  - adobe-acrobat-reader
-  - amethyst
   - angry-ip-scanner
   - audacity
   - db-browser-for-sqlite
@@ -124,7 +117,6 @@ homebrew_cask_apps:
   - bitwarden
   - microsoft-remote-desktop
   - powershell
-  - ringcentral
   - spotify
   - teamviewer
   - temurin11
@@ -133,9 +125,6 @@ homebrew_cask_apps:
   - visual-studio-code
   - wireshark
   - hpedrorodrigues/tools/dockutil
-  - flutter
-  - android-studio
-  - tunnelblick
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

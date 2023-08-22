@@ -41,6 +41,8 @@
           - ms-python.isort
           - ms-python.python
           - ms-python.vscode-pylance
+          - ms-python.black-formatter
+          - ms-python.flake8
           - ms-toolsai.jupyter
           - ms-toolsai.vscode-jupyter-cell-tags
           - ms-toolsai.vscode-jupyter-slideshow
@@ -58,7 +60,6 @@
           - redhat.vscode-yaml
           - rexshi.phpdoc-comment-vscode-plugin
           - sourcery.sourcery
-          - dart-code.flutter
         visual_studio_code_extensions_absent: []
 
   tasks:
