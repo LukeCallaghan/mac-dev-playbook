@@ -59,7 +59,6 @@
           - redhat.ansible
           - redhat.vscode-yaml
           - rexshi.phpdoc-comment-vscode-plugin
-          - sourcery.sourcery
         visual_studio_code_extensions_absent: []
 
   tasks:
