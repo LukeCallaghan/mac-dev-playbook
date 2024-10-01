@@ -95,10 +95,7 @@ homebrew_installed_packages:
   - thefuck
   - starship
 
-homebrew_taps:
-  - homebrew/bundle
-  - homebrew/cask-fonts
-  - homebrew/cask-versions
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
