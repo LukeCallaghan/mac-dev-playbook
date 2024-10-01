@@ -37,4 +37,5 @@
   mas:
     id: "{{ item }}"
     state: absent
+  become: true
   loop: "{{ mas_remove_apps }}"
