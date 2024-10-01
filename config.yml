@@ -118,7 +118,6 @@ homebrew_cask_apps:
   - ringcentral
   - spotify
   - teamviewer
-  - temurin11
   - termius
   - visual-studio-code
   - wireshark
