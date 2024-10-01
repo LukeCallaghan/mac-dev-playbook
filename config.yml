@@ -143,9 +143,9 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages:
-  - name: ansible-lint
-    state: present # present/absent/latest, default: present
+pip_packages: []
+  # - name: ansible-lint
+  #   state: present # present/absent/latest, default: present
   # version: "0.16.3" # default: N/A
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
