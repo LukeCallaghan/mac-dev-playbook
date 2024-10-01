@@ -94,6 +94,7 @@ homebrew_installed_packages:
   - thefuck
   - starship
   - dockutil
+  - mas
 
 homebrew_taps: []
 
