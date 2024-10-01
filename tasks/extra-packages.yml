@@ -35,6 +35,6 @@
 
 - name: Remove default macOS apps.
   mas:
-    name: "{{ item }}"
+    id: "{{ item }}"
     state: absent
   loop: "{{ mas_remove_apps }}"
