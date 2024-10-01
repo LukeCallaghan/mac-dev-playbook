@@ -96,8 +96,6 @@ homebrew_installed_packages:
   - starship
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
   - homebrew/bundle
   - homebrew/cask-fonts
   - homebrew/cask-versions
@@ -116,12 +114,14 @@ homebrew_cask_apps:
   - grammarly-desktop
   - bitwarden
   - microsoft-remote-desktop
+  - modern-csv
+  - moom
   - powershell
+  - ringcentral
   - spotify
   - teamviewer
   - temurin11
   - termius
-  - unetbootin
   - visual-studio-code
   - wireshark
   - hpedrorodrigues/tools/dockutil

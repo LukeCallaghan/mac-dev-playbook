@@ -26,7 +26,7 @@
       tags: ['dock']
     - role: gantsign.visual-studio-code-extensions
       users:
-      - username: lukecallaghan
+      - username: luke
         visual_studio_code_extensions:
           - alexcvzz.vscode-sqlite
           - Angular.ng-template
