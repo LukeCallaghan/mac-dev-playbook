@@ -32,3 +32,9 @@
     user_install: false
     executable: "{{ item.executable | default(omit) }}"
   loop: "{{ gem_packages }}"
+
+- name: Remove default macOS apps.
+  mas:
+    name: "{{ item }}"
+    state: absent
+  loop: "{{ mas_remove_apps }}"
