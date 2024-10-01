@@ -128,7 +128,7 @@ mas_email: ""
 mas_password: ""
 
 # Uses mas-cli to remove default apps
-mas_removed_apps:
+mas_remove_apps:
   - 409183694
 
 osx_script: "~/.osx --no-restart"
